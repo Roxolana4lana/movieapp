@@ -1,0 +1,115 @@
+$mainColor: #011e30;
+$addColor: #2d3f70;
+
+@import "responsive";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 11px;
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+}
+.App {
+  background-color: $mainColor;
+  height: 100%;
+  min-height: 100vh;
+}
+.Navigation {
+  background-color: $addColor;
+  padding: 1.3rem;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    font-family: "Bitter", serif;
+  }
+}
+.myInput {
+  text-align: center;
+  padding: 2rem;
+  input {
+    background-color: #2d3f7062;
+    border: 0.1rem solid #2d3f70;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    outline: none;
+  }
+}
+.Category {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    text-align: left;
+    margin: 1rem 2rem;
+    font-size: 2rem;
+  }
+}
+.MovieData {
+  background-color: #2d3f700a;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.myButton {
+  background: -moz-linear-gradient(top, #076097 0%, #233668 100%);
+  background: -webkit-linear-gradient(top, #076097 0%, #233668 100%);
+  background: linear-gradient(to right, #076097 0%, #233668 100%);
+  border: none;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Arial;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: rgb(201, 230, 224);
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 1rem 1rem;
+  outline: none;
+  width: 10rem;
+  &:hover {
+    background: -moz-linear-gradient(top, #233668 0%, #011e30 100%);
+    background: -webkit-linear-gradient(top, #233668 0%, #011e30 100%);
+    background: linear-gradient(to right, #233668 0%, #011e30 100%);
+    border: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgb(201, 230, 224);
+    margin: 1rem 1rem;
+    width: 10rem;
+  }
+}
+.mButton {
+  background: -moz-linear-gradient(top, #076097 0%, #233668 100%);
+  background: -webkit-linear-gradient(top, #076097 0%, #233668 100%);
+  background: linear-gradient(to right, #076097 0%, #233668 100%);
+  border: none;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Arial;
+  text-decoration: none;
+  color: rgb(201, 230, 224);
+  outline: none;
+  width: 10rem;
+  height: 4rem;
+  &:hover {
+    background: -moz-linear-gradient(top, #233668 0%, #011e30 100%);
+    background: -webkit-linear-gradient(top, #233668 0%, #011e30 100%);
+    background: linear-gradient(to right, #233668 0%, #011e30 100%);
+  }
+}
