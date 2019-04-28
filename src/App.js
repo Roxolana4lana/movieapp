@@ -11,6 +11,7 @@ function App() {
         <Navigation />
         <Movie />
       </div>
+      <h1>Hello</h1>
     </Store>
   );
 }
