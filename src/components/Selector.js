@@ -9,6 +9,7 @@ import { StoreContext } from "./Store";
 const WithState = toRenderProps(withState("anchorEl", "updateAnchorEl", null));
 
 export default function Selector(props) {
+  // eslint-disable-next-line
   const [state, dispatch] = useContext(StoreContext);
   return (
     <WithState>
@@ -18,11 +19,15 @@ export default function Selector(props) {
           updateAnchorEl(null);
         };
         const handlePopularity = () => {
-          dispatch({ type: "sortExtend" });
+          dispatch({
+            type: "sortExtend"
+          });
         };
 
         const handleVotes = () => {
-          dispatch({ type: "sortNormal" });
+          dispatch({
+            type: "sortNormal"
+          });
         };
         return (
           <React.Fragment>
@@ -49,82 +54,178 @@ export default function Selector(props) {
                 <MenuItem onClick={handleVotes}>{props.normal}</MenuItem>
               )}
               {props.action && (
-                <MenuItem onClick={() => dispatch({ type: "action" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "action"
+                    })
+                  }
+                >
                   {props.action}
                 </MenuItem>
               )}
               {props.adventure && (
-                <MenuItem onClick={() => dispatch({ type: "adventure" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "adventure"
+                    })
+                  }
+                >
                   {props.adventure}
                 </MenuItem>
               )}
               {props.animation && (
-                <MenuItem onClick={() => dispatch({ type: "animation" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "animation"
+                    })
+                  }
+                >
                   {props.animation}
                 </MenuItem>
               )}
               {props.comedy && (
-                <MenuItem onClick={() => dispatch({ type: "comedy" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "comedy"
+                    })
+                  }
+                >
                   {props.comedy}
                 </MenuItem>
               )}
               {props.crime && (
-                <MenuItem onClick={() => dispatch({ type: "crime" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "crime"
+                    })
+                  }
+                >
                   {props.crime}
                 </MenuItem>
               )}
               {props.documentary && (
-                <MenuItem onClick={() => dispatch({ type: "documentary" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "documentary"
+                    })
+                  }
+                >
                   {props.documentary}
                 </MenuItem>
               )}
               {props.drama && (
-                <MenuItem onClick={() => dispatch({ type: "drama" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "drama"
+                    })
+                  }
+                >
                   {props.drama}
                 </MenuItem>
               )}
               {props.family && (
-                <MenuItem onClick={() => dispatch({ type: "family" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "family"
+                    })
+                  }
+                >
                   {props.family}
                 </MenuItem>
               )}
               {props.fantasy && (
-                <MenuItem onClick={() => dispatch({ type: "fantasy" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "fantasy"
+                    })
+                  }
+                >
                   {props.fantasy}
                 </MenuItem>
               )}
               {props.history && (
-                <MenuItem onClick={() => dispatch({ type: "history" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "history"
+                    })
+                  }
+                >
                   {props.history}
                 </MenuItem>
               )}
               {props.horror && (
-                <MenuItem onClick={() => dispatch({ type: "horror" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "horror"
+                    })
+                  }
+                >
                   {props.horror}
                 </MenuItem>
               )}
               {props.music && (
-                <MenuItem onClick={() => dispatch({ type: "music" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "music"
+                    })
+                  }
+                >
                   {props.music}
                 </MenuItem>
               )}
               {props.mystery && (
-                <MenuItem onClick={() => dispatch({ type: "mystery" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "mystery"
+                    })
+                  }
+                >
                   {props.mystery}
                 </MenuItem>
               )}
               {props.romance && (
-                <MenuItem onClick={() => dispatch({ type: "romance" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "romance"
+                    })
+                  }
+                >
                   {props.romance}
                 </MenuItem>
               )}
               {props.thriller && (
-                <MenuItem onClick={() => dispatch({ type: "thriller" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "thriller"
+                    })
+                  }
+                >
                   {props.thriller}
                 </MenuItem>
               )}
               {props.western && (
-                <MenuItem onClick={() => dispatch({ type: "western" })}>
+                <MenuItem
+                  onClick={() =>
+                    dispatch({
+                      type: "western"
+                    })
+                  }
+                >
                   {props.western}
                 </MenuItem>
               )}

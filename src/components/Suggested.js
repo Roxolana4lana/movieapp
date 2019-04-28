@@ -7,7 +7,7 @@ const keyApi = process.env.REACT_APP_API_KEY_MOVIE;
 
 export default function Suggested() {
   const [film, setFilm] = useState([]);
-  const [state, dispatch] = useContext(StoreContext);
+  const [state] = useContext(StoreContext);
   useEffect(() => {
     if (state.genre !== " ") {
       axios
