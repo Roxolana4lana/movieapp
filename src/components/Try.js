@@ -33,7 +33,7 @@ const styles = theme => ({
 });
 
 function Try(props) {
-  const { classes, image, title, date, id } = props;
+  const { classes, image, title, id } = props;
 
   return (
     <React.Fragment>
@@ -43,8 +43,8 @@ function Try(props) {
           style={{
             backgroundColor: "#2d3f70",
             margin: "2rem",
-            width: "22rem",
-            height: "40rem",
+            width: "24rem",
+            height: "44rem",
             padding: "2rem"
           }}
         >
@@ -55,15 +55,6 @@ function Try(props) {
               style={{ textAlign: "center", color: "white" }}
             >
               {title}
-            </Typography>
-
-            <Typography style={{ textAlign: "center", color: "white" }}>
-              {date && (
-                <React.Fragment>
-                  Date of release:
-                  {date}
-                </React.Fragment>
-              )}
             </Typography>
 
             <button className="myButton">
