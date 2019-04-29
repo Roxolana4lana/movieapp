@@ -8,6 +8,11 @@
   list-style: none; }
   * a {
     text-decoration: none; }
+  * ::-webkit-scrollbar {
+    width: 1px; }
+  * ::-webkit-scrollbar-thumb {
+    background: #2d3f70;
+    border-radius: 0.5rem; }
 
 .App {
   background-color: #011e30;
