@@ -46,6 +46,16 @@ $addColor: #2d3f70;
     padding: 1rem 2rem;
     border-radius: 2rem;
     outline: none;
+
+    @include breakpoint(s) {
+      width: 65%;
+    }
+    @include breakpoint(m) {
+      width: 30%;
+    }
+    @include breakpoint(l) {
+      width: 20%;
+    }
   }
 }
 .Category {
