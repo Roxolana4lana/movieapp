@@ -23,7 +23,7 @@ export default function Movie() {
       <div className="myInput">
         <form onSubmit={handleSubmit}>
           <input
-            placeholder="enter the key word"
+            placeholder="title"
             type="text"
             value={value}
             onChange={e => setValue(e.target.value)}
